@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: #0f172a; /* slate-900 */
+    --foreground: #f8fafc; /* slate-50 */
+    --border: rgba(255, 255, 255, 0.1);
+    --glass-bg: rgba(30, 41, 59, 0.7); /* slate-800 with opacity */
+    --glass-border: rgba(255, 255, 255, 0.08);
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[var(--glass-bg)] backdrop-blur-md border border-[var(--glass-border)] shadow-xl rounded-2xl;
+  }
+}
