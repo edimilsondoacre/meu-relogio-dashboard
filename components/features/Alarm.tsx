@@ -1,5 +1,6 @@
-import { cn } from "@/lib/utils";
 "use client";
+
+import { cn } from "@/lib/utils";
 import { useState, useEffect } from "react";
 import { Plus, Trash2, Bell, BellOff } from "lucide-react";
 import { useLocalStorage } from "@/hooks/useLocalStorage";
